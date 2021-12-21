@@ -26,8 +26,8 @@ a:hover {
 }
 
 body {
-  font-family: "Courier New", Courier, monospace;
-  background-color: #f3ebe7;
+  font-family: "Arial, Helvetica, sans-serif";
+  background-color: #c9ccdd;
 }
 
 .static {
@@ -38,7 +38,7 @@ body {
 
 header {
   border-bottom: solid 1px;
-  background-color: #f3ebe7;
+  background-color: #abb3d1;
 }
 
 header,
@@ -49,6 +49,7 @@ nav {
   padding: 5px 5px 5px 5px;
   color: black;
   font-size: 25px;
+
 }
 
 h1 {
@@ -59,12 +60,19 @@ hr {
   margin: 0;
 }
 
-.welcome {
+.Hello {
   font-size: 50px;
   padding-top: 40px;
   padding-bottom: 0px;
 }
 
+@media (max-width: 500px) {
+  .Hello {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 0px;
+  }
+}
 
 .intro {
   display: flex;
@@ -100,6 +108,17 @@ hr {
 .about-me {
   display: flex;
 }
+.about-me > img {
+  width: 275px;
+}
+
+@media (max-width: 500px){
+  .about-me > img {
+    width: 275px;
+    padding-top: 15px;
+    padding-bottom: 15px
+  }
+}
 
 @media (max-width: 500px) {
   .about-me {
@@ -114,29 +133,6 @@ hr {
   justify-content: space-evenly;
 }
 
-.about-me > .sdsu {
-  flex-direction: column;
-  flex: 40;
-}
-
-.sdsu {
-  margin-top: 0px;
-  padding-bottom: 10px;
-  width: 30%;
-}
-
-.meme {
-  margin-top: 50px;
-  padding-bottom: 10px;
-  width: 40%;
-}
-
-@media (max-width: 500px) {
-  .sdsu, .meme {
-    display: none;
-  }
-}
-
 p {
   text-align: center;
   font-size: 20px;
@@ -149,6 +145,9 @@ p {
     margin: 0;
   }
 }
+ol {
+  text-align: justify;
+}
 
 .list {
   padding-bottom: 0;
@@ -158,9 +157,11 @@ h2 {
   text-align: center;
 }
 
-ol {
+
+ul {
   margin-top: 5px;
   padding-bottom: 10px;
+  text-align: justify;
 }
 
 li {
@@ -186,8 +187,8 @@ h3 {
 }
 
 .contact-images {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
 }
 
 
