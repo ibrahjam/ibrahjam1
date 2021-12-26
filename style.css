@@ -1,7 +1,7 @@
    * {
   box-sizing: border-box;
 }
-
+/*Set scroll behavior of the page when a link is clicked */
 html {
   scroll-behavior: smooth;
 }
@@ -27,7 +27,7 @@ a:hover {
 
 body {
   font-family: "Arial, Helvetica, sans-serif";
-  background-color: #c9ccdd;
+  background-color: #c9ccdd; /* set the background color of the page*/
 }
 
 .static {
@@ -47,7 +47,7 @@ nav {
   text-align: center;
   margin: 0;
   padding: 5px 5px 5px 5px;
-  color: black;
+  color: black; /* set text color to black*/
   font-size: 25px;
 
 }
